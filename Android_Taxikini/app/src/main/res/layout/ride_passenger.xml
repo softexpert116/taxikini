@@ -1,0 +1,222 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/content_home" />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_gravity="bottom"
+        ></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ly_push1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="visible"
+        android:layout_marginTop="-100dp"
+        android:layout_gravity="bottom">
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="CONFIRM DESTINATION"
+            android:textSize="16dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_ride_button"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ly_push"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:visibility="visible"
+        android:layout_marginTop="-250dp"
+        android:layout_gravity="bottom"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ride_background"
+
+            ></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly_user"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="50dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ride Details:"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:textColor="#ffffff"
+                    />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_user"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly_chat"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            >
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <Button
+                    android:id="@+id/chat_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_chat_white"
+                    />
+                <Button
+                    android:id="@+id/call_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_call1"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/ly_user"
+            android:layout_toLeftOf="@+id/ly_chat"
+            android:gravity="center"
+            android:padding="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User's current location here"
+                    android:textSize="16dp"
+                    android:textColor="#ffffff"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/departure_circle"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="departure address here ..."
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/destination_circle"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="destination address here ..."
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txt_fare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total fare: 50MYR"
+                    android:textColor="#00ff00"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/ic_cancel"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ride"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="-350dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ride_background"
+            ></RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginVertical="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="RM 5"/>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

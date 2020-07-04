@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:id="@+id/text_input_layout"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_common_back"
+            >
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ccp_defaultNameCode="CN"
+                app:ccp_textSize="16sp"
+                app:ccp_autoDetectLanguage="true"
+                app:ccp_defaultLanguage="ENGLISH"
+                app:ccp_showFlag="true">
+            </com.hbb20.CountryCodePicker>
+
+            <EditText
+                android:id="@+id/mobileEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New mobile number"
+                android:fontFamily="@font/gibson_regular"
+                android:background="@android:color/transparent"
+                android:inputType="phone" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/enter" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>

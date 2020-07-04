@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RegisterActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/photoCamera"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/icon_camera_photo"
+                    android:layout_marginBottom="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_registration_layout"
+
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <LinearLayout
+                        android:layout_marginTop="35dp"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded_common_back">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/ico_name" />
+
+                        <EditText
+                            android:id="@+id/firstNameEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:background="@android:color/transparent"
+                            android:hint="First name"
+                            android:text="alex"
+                            android:fontFamily="@font/gibson_regular"
+                            android:inputType="text" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded_common_back">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/ico_name" />
+
+                        <EditText
+                            android:id="@+id/lastNameEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Last name"
+                            android:text="wang"
+                            android:fontFamily="@font/gibson_regular"
+                            android:inputType="text" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded_common_back">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/ico_email" />
+
+                        <EditText
+                            android:id="@+id/emailEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Email Address"
+                            android:text="alexwang@gmail.com"
+                            android:fontFamily="@font/gibson_regular"
+                            android:inputType="textEmailAddress" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded_common_back">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/ico_nric" />
+
+                        <EditText
+                            android:id="@+id/nricEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:background="@android:color/transparent"
+                            android:hint="NRIC"
+                            android:text="11111"
+                            android:inputType="number"
+                            android:fontFamily="@font/gibson_regular" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded_common_back">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/ico_password" />
+
+                        <EditText
+                            android:id="@+id/passwordEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Password"
+                            android:text="password"
+                            android:fontFamily="@font/gibson_regular"
+                            android:inputType="textPassword" />
+
+                    </LinearLayout>
+
+                    <!--<Button-->
+                    <!--android:id="@+id/btnSignInGoogle"-->
+                    <!--android:layout_width="300dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:background="@drawable/btn_submit"-->
+                    <!--android:text="Sign in with Google"-->
+                    <!--android:fontFamily="@font/gibson_bold"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:onClick="onFacebookLoginClick" />-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="By pressing 'submit' you agree to our"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/terms"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorRecover"/>
+
+                    <Button
+                        android:id="@+id/btnSignUp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/btn_submit"
+                        android:text="SUBMIT"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="@font/gibson_bold"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </TableLayout>
+
+    </ScrollView>
+
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,192 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.taxi.Fragments.driver.DriverProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/driverImageView"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ic_driver" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:text="Driver"
+                    android:textColor="@color/colorHint"
+                    />
+
+                <ImageView
+                    android:id="@+id/starImageView"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_stars" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorHint"
+                    >
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+                    <TextView
+                        android:id="@+id/txt_firstname_label"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:text="First Name"
+                        android:textColor="@color/colorHint"
+                        android:layout_centerVertical="true"
+                        />
+                    <TextView
+                        android:id="@+id/driverFirstName"
+                        android:layout_toRightOf="@+id/txt_firstname_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="Jhon"
+                        android:layout_centerVertical="true"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorHint"
+                        android:layout_alignParentBottom="true"
+                        ></LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+                    <TextView
+                        android:id="@+id/txt_lastname_label"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:text="Last Name"
+                        android:textColor="@color/colorHint"
+                        android:layout_centerVertical="true"
+                        />
+                    <TextView
+                        android:id="@+id/driverLastName"
+                        android:layout_toRightOf="@+id/txt_lastname_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="Dae"
+                        android:layout_centerVertical="true"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorHint"
+                        android:layout_alignParentBottom="true"
+                        ></LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+                    <TextView
+                        android:id="@+id/txt_email_label"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:text="Email"
+                        android:textColor="@color/colorHint"
+                        android:layout_centerVertical="true"
+                        />
+                    <TextView
+                        android:id="@+id/driverEmail"
+                        android:layout_toRightOf="@+id/txt_email_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="jhon@gmail.com"
+                        android:layout_centerVertical="true"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorHint"
+                        android:layout_alignParentBottom="true"
+                        ></LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+                    <TextView
+                        android:id="@+id/txt_number_label"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:text="Phone number"
+                        android:textColor="@color/colorHint"
+                        android:layout_centerVertical="true"
+                        />
+                    <TextView
+                        android:id="@+id/driverNumber"
+                        android:layout_toRightOf="@+id/txt_number_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="+6121547894"
+                        android:layout_centerVertical="true"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorHint"
+                        android:layout_alignParentBottom="true"
+                        ></LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/driverLisenceTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"
+                    android:text="Driver lisense"
+                    android:textColor="@color/colorHint"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <ImageView
+                    android:id="@+id/driverLisenseImageView"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:src="@drawable/ic_driver_lisense" />
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>

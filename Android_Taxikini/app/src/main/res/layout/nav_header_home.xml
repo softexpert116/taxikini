@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="#0098dc"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+    <RelativeLayout
+        android:id="@+id/ly_profile"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileArrow"
+            android:gravity="right"
+            android:layout_marginLeft="240dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_back_right" />
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileName"
+            android:padding="12dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"
+            android:text="Lionel Messi Messi"
+            android:textColor="@android:color/white"
+            android:background="@drawable/ic_menu_name_layer"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/navProfile"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ic_user"
+            android:layout_gravity="right"
+            app:civ_border_width="2dp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="#FF000000"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

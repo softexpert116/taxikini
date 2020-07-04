@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:orientation="vertical"
+    >
+    <fragment
+        android:id="@+id/place_autocomplete_fragment"
+        android:name="com.google.android.libraries.places.compat.ui.PlaceAutocompleteFragment"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aaaaaa"
+        ></LinearLayout>
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="OK"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/rideButton"
+        android:textColor="#ffffff"
+        />
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#ffffff"
+        android:background="@color/rideButton"
+        />
+</RelativeLayout>

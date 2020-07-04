@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionBarSize">#1A94FF</color>
+
+    <color name="colorPrimary">#e3f3ff</color>
+    <color name="colorPrimaryDark">#00adef</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorHint">#777777</color>
+    <color name="gray_light">#e8e8e8</color>
+    <color name="colorRecover">#FFCA00</color>
+    <color name="colorSubmit">#4A69FF</color>
+    <color name="colorSubmitTop">#380EC7</color>
+    <color name="colorSubmitBottom">#138557</color>
+
+    <color name="pickupLocation">#454F63</color>
+    <color name="separateLine">#F4F4F6</color>
+
+    <color name="rideBackground">#2A2E43</color>
+    <color name="rideBackgroundBorder">#707070</color>
+    <color name="rideInnerBack">#353A50</color>
+    <color name="rideButton">#3ACCE1</color>
+    <color name="rideButtonBorder">#665EFF</color>
+    <color name="ridePayButton">#9BA9AB</color>
+    <color name="colorGray">#CCCCCC</color>
+    <color name="colorEllipse">#030304</color>
+    <color name="colorRate">#FFB900</color>
+    <color name="colorRateBack">#464E63</color>
+
+    <color name="colorOnlineBack">#6B6B6B</color>
+    <color name="colorOfflineBack">#E60909</color>
+    <color name="colorGradBottom">#0088FF</color>
+    <color name="colorGradTop">#00FF55</color>
+    <color name="colorGradBorder">#00E5FF</color>
+    <color name="colorDeclineRed">#E13A3A</color>
+
+</resources>

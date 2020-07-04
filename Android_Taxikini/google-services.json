@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1036688412772",
+    "firebase_url": "https://taxikini-9a743.firebaseio.com",
+    "project_id": "taxikini-9a743",
+    "storage_bucket": "taxikini-9a743.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036688412772:android:fdcd909d2c1a791a",
+        "android_client_info": {
+          "package_name": "com.taxi.kini"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036688412772-kuqh2o54l37matgu27v74krapubc0j7l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taxi.kini",
+            "certificate_hash": "3dba6e0db1a0300fb77f148eb425112ddc2686af"
+          }
+        },
+        {
+          "client_id": "1036688412772-j6ch60t3q5fr5or4ib6dk8thetemk78i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taxi.kini",
+            "certificate_hash": "97913b3083d70b9560484101ac6d63f2d228279a"
+          }
+        },
+        {
+          "client_id": "1036688412772-m3pmd8vbai8u6hurcvine1vft3n6p04g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCqyTggEJ730vlOblL5qcjsRBv09iIuIw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036688412772-m3pmd8vbai8u6hurcvine1vft3n6p04g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

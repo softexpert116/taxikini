@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_ride"
+            android:icon="@drawable/icon_frontal_taxi_cab"
+            android:visible="true"
+            android:title="@string/nav_ride" />
+        <item
+            android:id="@+id/nav_find_job"
+            android:icon="@drawable/icon_steering_wheel"
+            android:title="@string/nav_find_job" />
+        <item
+            android:id="@+id/nav_airport_taxi"
+            android:icon="@drawable/icon_clipart_airport_taxi"
+            android:visible="false"
+            android:title="@string/nav_airport_taxi" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/icon_history"
+            android:title="@string/nav_history" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/icon_news"
+            android:title="@string/nav_news" />
+        <item
+            android:id="@+id/nav_payments"
+            android:icon="@drawable/icon_payment_credit"
+            android:title="@string/nav_payments" />
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/icon_support"
+            android:title="@string/nav_support" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/icon_setting"
+            android:title="@string/nav_setting" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/icon_about"
+            android:title="@string/nav_about" />
+
+    </group>
+
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_switch_driver"
+                android:icon="@drawable/icon_finder_taxi_passenger"
+                android:title="@string/nav_driver" />
+
+            <item
+                android:id="@+id/nav_switch_passenger"
+                android:icon="@drawable/icon_steering_wheel"
+                android:title="@string/nav_passenger" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/icon_logout"
+                android:title="@string/nav_logout" />
+        </menu>
+    </item>
+
+</menu>

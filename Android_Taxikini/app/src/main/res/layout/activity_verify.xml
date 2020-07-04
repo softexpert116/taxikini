@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".VerifyActivity">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/otp" />
+
+        <com.jkb.vcedittext.VerificationCodeEditText
+            android:id="@+id/verifyCode"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:bottomLineHeight="4dp"
+            app:bottomLineNormalColor="@color/white"
+            app:bottomLineSelectedColor="@color/white"
+            app:figures="6"
+            app:selectedBackgroundColor="@color/transparent"
+            app:verCodeMargin="5dp" />
+
+        <TextView
+            android:id="@+id/txtRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/gibson_regular"
+            android:text="resend verification code in 59 seconds"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnVerify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/enter" />
+
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>
